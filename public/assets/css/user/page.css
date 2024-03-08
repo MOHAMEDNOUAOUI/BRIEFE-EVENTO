@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: timer_bold;
+    src: url(../../fonts/Times\ New\ Romance-Bold.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+@font-face {
+    font-family: Dx Slight;
+    src: url(../../fonts/dxslight-mediumultra-free-personal-use.otf);
+}
+
+@font-face {
+    font-family: against;
+    src: url(../../font/against\ regular.otf);
+}
+
+@font-face {
+    font-family: Brigends;
+    src: url(../../fonts/brigends-expanded-font-1705392758-0/brigendsexpanded-nrek1.otf);
+}
+
+@font-face {
+    font-family: MADE TOMMY;
+    src: url(../../font/MADE\ TOMMY\ Light_PERSONAL\ USE.otf);
+}
+
+
+
+:root {
+	--poppins: 'Poppins', sans-serif;
+	--lato: 'Lato', sans-serif;
+
+	--light: #F9F9F9;
+	--blue: #3C91E6;
+    --purple : #9A44E9;
+	--light-blue: #CFE8FF;
+	--grey: #eee;
+	--dark-grey: #AAAAAA;
+	--dark: #342E37;
+	--red: #DB504A;
+	--yellow: #FFCE26;
+	--light-yellow: #FFF2C6;
+	--orange: #FD7238;
+	--light-orange: #FFE0D3;
+    --sidebar : #2D2F3D;
+	--bg : #000000;
+    --shadow : #0e1012;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar-thumb {
+    background: currentcolor;
+    border-radius: 8px;
+}
+
+body {
+	overflow-x: hidden;
+    min-height: 100vh;
+    background: var(--bg);
+    padding: 0 3rem;
+}
+
+a,li{
+    list-style: none;
+    text-decoration: none;
+}
+
+#navbar {
+    width: 100%;
+    height: 60vh;
+    /* background: url(../../images/sky.jpg), linear-gradient(rgba(46, 0, 72, 0.5), rgba(72, 0, 100, 0.728)); */
+    background: linear-gradient(120deg, rgba(0,0,0,1) 80%, rgb(57, 0, 136) 100%);
+    background-color: var(--shadow);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem 3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar .content {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar .content .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.582);
+    z-index: 1;
+}
+
+#navbar .content .text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+.text h1 {
+    font-family: against;
+    font-size: 5rem;
+}
+
+.text button {
+    background-color: white;
+    color: black;
+    padding: 0.7rem 3rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.category {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    color: white;
+}
+
+.category h3 {
+    font-family: Roboto;
+    font-size: 1.2rem;
+}
+.category p {
+    font-family: Roboto;
+    text-transform: uppercase;
+    opacity: 0.8;
+    border: 3px solid var(--grey);
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    padding: 1rem 0.5rem;
+}
+
+.content p {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    color: white;
+    background-color: black;
+    padding: 0.4rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.description {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    color: white;
+}
+
+.description h3 {
+    font-family: Roboto;
+    font-size: 1.2rem;
+}
+
+.description p {
+    font-family: Roboto;
+    opacity: 0.8;
+    padding: 1rem 0.5rem;
+}
+
+.reservation {
+    width: 100%;
+    height: auto;
+    padding: 2rem 3rem;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    transition: 400ms ease-in-out;
+    cursor: pointer;
+}
+
+.reservation button {
+    width: 100%;
+    font-size: 1.4rem;
+    font-family: Roboto;
+    font-weight: 500;
+    transition: 400ms ease-in-out;
+}
+
+.reservation:hover{
+    background-color: white;
+    color: black;
+}
+
+.reservation:hover button {
+    font-weight: 100;
+}
+

@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: timer_bold;
+    src: url(../../fonts/Times\ New\ Romance-Bold.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+@font-face {
+    font-family: Dx Slight;
+    src: url(../font/dxslight-mediumultra-free-personal-use.otf);
+}
+
+@font-face {
+    font-family: against;
+    src: url(../font/against\ regular.otf);
+}
+
+@font-face {
+    font-family: Brigends;
+    src: url(../font/brigends-expanded-font-1705392758-0/brigendsexpanded-nrek1.otf);
+}
+
+@font-face {
+    font-family: MADE TOMMY;
+    src: url(../font/MADE\ TOMMY\ Light_PERSONAL\ USE.otf);
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: rgba(255, 255, 255, 0.701);
+}
+
+
+
+
+:root {
+	--poppins: 'Poppins', sans-serif;
+	--lato: 'Lato', sans-serif;
+
+	--light: #F9F9F9;
+	--blue: #3C91E6;
+    --purple : #9A44E9;
+	--light-blue: #CFE8FF;
+	--grey: #eee;
+	--dark-grey: #AAAAAA;
+	--dark: #342E37;
+	--red: #DB504A;
+	--yellow: #FFCE26;
+	--light-yellow: #FFF2C6;
+	--orange: #FD7238;
+	--light-orange: #FFE0D3;
+    --sidebar : #2D2F3D;
+	--bg : #000000;
+    --shadow : #0e1012;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar-thumb {
+    background: currentcolor;
+    border-radius: 8px;
+}
+
+body {
+	overflow-x: hidden;
+    min-height: 100vh;
+    background: var(--bg);
+}
+
+a,li{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+#navbar {
+    width: 100%;
+    height: 100vh;
+    /* background: url(../../images/sky.jpg), linear-gradient(rgba(46, 0, 72, 0.5), rgba(72, 0, 100, 0.728)); */
+    background: linear-gradient(120deg, rgba(0,0,0,1) 80%, rgb(57, 0, 136) 100%);
+    background-color: var(--shadow);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem 3rem;
+    position: relative;
+}
+
+#navbar .event {
+    position: absolute;
+    width: 15rem;
+    height: 20rem;
+    filter: blur(10px);
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+}
+#navbar .event1 {
+    bottom: 3rem;
+    left: 10rem;
+    rotate: 175deg;
+    background: linear-gradient(10deg, rgba(0,0,0,1) 10%, rgb(34, 0, 136) 100%);
+}
+
+#navbar .event1 img{
+    width: 100%;
+    height: 100%;
+    rotate: 170deg;
+}
+
+#navbar .event2 {
+   top: 5rem;
+    right: 10rem;
+    rotate: 15deg;
+    background: linear-gradient(10deg, rgba(0,0,0,1) 10%, rgb(136, 0, 0) 100%);
+}
+
+#navbar .event2 img{
+    width: 100%;
+    height: 100%;
+    rotate: 170deg;
+}
+
+
+
+#navbar nav {
+    width: 100%;
+    height: 3rem;
+    padding: 5rem inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#navbar nav .logo {
+    width: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+#navbar nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+#navbar main {
+    width: 100%;
+    height: calc(100% - 5rem);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+#navbar .follows {
+    width: auto;
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.676);
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 3px;
+    border: 1px solid var(--grey);
+}
+
+.follows .d {
+        height: 100%;
+        width: 2.3rem;
+        background-color: rgb(44, 44, 44);
+        border-radius: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.follows .d i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#navbar main div h1 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-family: against;
+    font-weight: 700;
+    font-style: normal;
+    width: 34%;
+}
+
+#navbar main div p {
+    width: 50%;
+    color: rgba(255, 255, 255, 0.758);
+    text-align: center;
+}
+
+#navbar main img {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+#navbar main img:hover {
+    transform: scale(1.1);
+    rotate: 180deg;
+}
+
+
+
+.movingcategorys{
+    height: 100vh;
+    width: 100% !important;
+    padding: 3rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movingcategorys p {
+    font-family: against;
+    font-weight: 700;
+    font-size: 4rem;
+    width: 40%;
+}
+
+.movingcategorys .moving-text {
+    height: 100%;
+    overflow-y:auto;
+    transform: perspective(200px) rotateZ(5deg) rotateX(-6deg) rotateY(-9deg);
+    font-size: 2rem;
+    padding-right: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: right;
+    cursor: pointer;
+    transition: 300ms ease-in;
+}
+.movingcategorys .moving-text h2{
+    transition: 300ms ease-in;
+    font-family: against;
+}
+
+
+.movingcategorys .moving-text h2:hover {
+    transform: scale(1.1);
+    transition: 300ms ease-in;
+    transform: perspective(1000) rotateY(9deg) rotateX(6deg) rotateZ(-5deg);
+}
+
+
+
+
+
+
+
+
+
+
+#page2 {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 7rem;
+}
+
+#page2 video {
+    width: 75%;
+    height: 30%;
+    border-radius: 30px;
+}
+
+#page2 h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: against;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+}
+
+
+
+
+
+
+
+#page3 {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem 3rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#page3 .cate {
+    width: 100%;
+}
+
+#page3 .cate form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#page3 .cate form button {
+    border: 1px solid var(--grey);
+    padding: 0.2rem 0.6rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: against;
+}
+
+#page3 .cate form button.active {
+    background-color: var(--purple);
+}
+
+
+#page3 .events {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+
+
+#page3 .events a {
+    background-color: #000000;
+    height: 15rem;
+    background-position: center;
+    background-size: cover;
+    grid-column: span 2;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+#page3 .events a:hover {
+    transform: scale(0.98);
+}
+
+#page3 .events a:first-child {
+    grid-column: span 6;
+}
+
+#page3 .events #text {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    height: 100%;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#text h3, #text p {
+    writing-mode: vertical-lr; 
+    text-orientation: upright;
+    font-family: against;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+#page3 .events #text2 {
+    grid-column: 8/9;
+    grid-row: 2/4;
+    height: 100%;
+    color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#text2 h3, #text2 p {
+    writing-mode: vertical-lr; 
+    text-orientation: upright;
+    font-family: against;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+#page3 .searcharea {
+    color: black;
+    display: flex;
+    justify-content: right;
+    padding: 0 4rem;
+    height: 2rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.searcharea input {
+    width: 40%;
+    padding-left: 0.8rem;
+}
+
+.searcharea label {
+    color: white;
+    font-family: Dx slight;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
