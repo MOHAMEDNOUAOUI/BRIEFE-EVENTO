@@ -33,7 +33,7 @@ Route::middleware(['auth' , 'organisateur'])->group(function () {
     Route::resource('events' , EvenementController::class);
     Route::post('/methodchanger' , [EvenementController::class , 'methodchanger'])->name('methodchanger');
     Route::resource('Les-reservations' , ReservationController::class);
-    Route::post('/Les-reservations/event' , [ReservationController:: class , 'reservation'])->name('page.reservation');
+    Route::post('/Les-reservations/statuschanger' , [ReservationController::class , 'statuschanger'])->name('status');
 });
 
 

@@ -356,7 +356,7 @@
                 </td>
                 
                 <td class="px-6 py-4">
-               <form action="{{ route('methodchanger')}}" method="post">
+               <form action="{{ route('methodchanger')}}" method="get">
                 @csrf
                 <input type="text" name="event_id" value="{{$event->id}}" hidden>
                @if($event->method == 'auto')

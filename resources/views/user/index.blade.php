@@ -78,6 +78,12 @@
         </div>
     </div>
 
+    <div class="rare">
+        <h1>ENVENTO</h1>
+        <h2>ENVENTO</h2>
+        <p>WEBSITE MADE WITH LOVE</p>
+    </div>
+
 
 
     <section id="page2">
@@ -159,8 +165,9 @@
 
 
 
-
-
+     <footer>
+        <h1>ENVENTO</h1>
+     </footer>
 
 
 

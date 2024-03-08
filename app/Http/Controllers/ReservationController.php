@@ -20,12 +20,18 @@ class ReservationController extends Controller
     }
 
 
-    public function reservation(Request $request) {
-            $events = Evenement::with('category')->get();
-            $reservations = Reservation::with('event', 'user')->where('event_id' , $request->input('event'))->get();
-            $evenement = evenement::where('id' , $request->input('event'))->first();
-            return view('organisateur.reservation', compact('events', 'reservations' , 'evenement'));
+
+
+    public function statuschanger (Request $request) 
+    {
+                $reservation = reservation::findOrFail($request->input('status'));
+                $reservation->status = 'accepted';
+                $reservation->save();
+
+                return redirect()->back();
     }
+
+
 
     /**
      * Show the form for creating a new resource.
@@ -86,7 +92,10 @@ class ReservationController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $events = Evenement::with('category')->get();
+            $reservations = Reservation::with('event', 'user')->where('event_id' , $id)->get();
+            $evenement = evenement::where('id' , $id)->first();
+            return view('organisateur.reservation', compact('events', 'reservations' , 'evenement'));
     }
 
     /**

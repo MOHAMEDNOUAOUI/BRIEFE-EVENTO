@@ -10,17 +10,17 @@
 
 @font-face {
     font-family: Dx Slight;
-    src: url(../font/dxslight-mediumultra-free-personal-use.otf);
+    src: url(../../fonts/dxslight-mediumultra-free-personal-use.otf);
 }
 
 @font-face {
     font-family: against;
-    src: url(../font/against\ regular.otf);
+    src: url(../../font/against\ regular.otf);
 }
 
 @font-face {
     font-family: Brigends;
-    src: url(../font/brigends-expanded-font-1705392758-0/brigendsexpanded-nrek1.otf);
+    src: url(../../fonts/brigends-expanded-font-1705392758-0/brigendsexpanded-nrek1.otf);
 }
 
 @font-face {
@@ -443,9 +443,65 @@ align-items: center;
 }
 
 
+.rare {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.rare h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 12rem;
+    font-family: Brigends;
+    color: transparent;
+    -webkit-text-stroke: 3px rgba(255, 255, 255, 0.135);
+}
+
+.rare h2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    color: white;
+    font-size: calc(16rem / 2);
+    font-family: against;
+}
+
+
+.rare p {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    color: white;
+    font-size: 1rem;
+    font-family: Roboto;
+}
 
 
 
+
+
+footer {
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    background-image: url(../../images/greek2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+footer h1 {
+    font-size: 10rem;
+    font-family: against;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.97);
+}
 
 
 

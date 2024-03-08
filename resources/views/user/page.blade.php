@@ -17,6 +17,8 @@
 <body>
 
 
+<a href="{{ route('home')}}" style="width:2rem;height:2rem"><img style="width:4rem;height:4rem" src="{{ asset('assets/images/logo.png')}}"  alt=""></a>
+
 <section id="navbar">
 
         @php
